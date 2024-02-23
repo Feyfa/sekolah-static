@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="public/css/output.css">
+</head>
+<body class="bg-[rgb(250,250,250)] font-inter text-[rgb(10,10,10)] w-full overflow-x-hidden">
+    <div class="max-w-full lg:flex lg:h-screen">
+        <!-- navbar -->
+        <nav class="bg-slate-800 w-full fixed bottom-0 py-2 flex justify-around items-center lg:w-[7%] lg:static lg:flex-col lg:h-screen lg:justify-start xl:w-[6%] z-50">
+            <a href="user.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-user fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[110%] xl:translate-x-[120%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    User
+                </p>
+            </a>
+
+            <a href="list.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full icon-active">
+                <i class="fa-solid fa-list fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[117%] xl:translate-x-[127%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    List
+                </p>
+            </a>
+
+            <a href="insert.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-plus fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[105%] xl:translate-x-[115%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    Insert
+                </p>
+            </a>
+            
+            <a href="index.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:absolute lg:bottom-0 xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-arrow-right-from-bracket fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[105%] xl:translate-x-[115%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    Logout
+                </p>
+            </a>
+        </nav>
+        <!-- navbar -->
+
+
+        <!-- main -->
+        <main class="verflow-hidden w-full p-3 mb-14 sm:mb-16 md:mb-[4.5rem] lg:w-[93%] lg:p-5 lg:h-screen lg:overflow-auto lg:relative xl:w-[94%] xl:p-7">
+            <div class="w-full">
+                <div class="flex flex-col-reverse justify-center items-center gap-y-5 mb-5 sm:flex-row sm:justify-between sm:gap-y-0">
+                    <h1 class="text-xl font-semibold tracking-wide sm:text-2xl md:text-3xl sm:mb-2 md:mb-4 lg:mb-4 xl:mb-5">Murid Kelas 1</h1>
+                    <input type="text" class="input-search border border-slate-500 py-2.5 px-2 rounded-sm text-lg outline-none w-full sm:w-1/3 lg:w-1/4" placeholder="Search">
+                </div>
+
+                <table class="w-full border-collapse mx-auto text-base sm:text-lg mt-2">
+                    <thead class="text-left bg-slate-800 text-white">
+                        <tr>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4">Foto</th>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4 hidden sm:table-cell">NIS/NISN</th>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4">Nama</th>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Gender</th>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Agama</th>
+                            <th class="p-2 md:px-2 lg:px-3 xl:px-4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-slate-300 text-left bg-white">
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4"><img width="80" class="sm:w-[85px] md:w-[90px] lg:w-[95px] xl:w-[100px]" src="public/img/list/minato.jpg"></td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden sm:table-cell">0001/123456</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4">Minato</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Laki-Laki</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Islam</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 text-white font-medium">
+                                <div class="flex justify-start items-center gap-x-5 sm:gap-x-6 md:gap-x-7 ld:gap-x-8">
+                                    <a href="#" class="border border-gray-300 bg-gray-100 p-0.5 sm:p-1 rounded-sm"><i class="fa-solid fa-pencil fa-lg" style="color: #fac400;"></i></a>
+                                    <form>
+                                        <button type="button" class="border border-gray-300 bg-gray-100 p-0.5 sm:p-1 rounded-sm">
+                                            <i class="fa-solid fa-trash fa-lg" style="color: #dc3545;"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-slate-300 text-left bg-white">
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4"><img width="80" class="sm:w-[85px] md:w-[90px] lg:w-[95px] xl:w-[100px]" src="public/img/list/gojo.jpg"></td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden sm:table-cell">0002/654321</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4">Gojo Satoru</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Laki-Laki</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 hidden lg:table-cell">Kristen</td>
+                            <td class="p-2 md:px-2 lg:px-3 xl:px-4 text-white font-medium">
+                                <div class="flex justify-start items-center gap-x-5 sm:gap-x-6 md:gap-x-7 ld:gap-x-8">
+                                    <a href="#" class="border border-gray-300 bg-gray-100 p-0.5 sm:p-1 rounded-sm"><i class="fa-solid fa-pencil fa-lg" style="color: #fac400;"></i></a>
+                                    <form>
+                                        <button type="button" class="border border-gray-300 bg-gray-100 p-0.5 sm:p-1 rounded-sm">
+                                            <i class="fa-solid fa-trash fa-lg" style="color: #dc3545;"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <!-- main -->
+    </div>
+</body>
+</html>

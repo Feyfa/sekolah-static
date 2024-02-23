@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="public/css/output.css">
+</head>
+<body class="bg-[rgb(250,250,250)] font-inter text-[rgb(10,10,10)] w-full overflow-x-hidden">
+    <div class="max-w-full lg:flex lg:h-screen">
+        <!-- navbar -->
+        <nav class="bg-slate-800 w-full fixed bottom-0 py-2 flex justify-around items-center lg:w-[7%] lg:static lg:flex-col lg:h-screen lg:justify-start xl:w-[6%] z-50">
+            <a href="user.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-user fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[110%] xl:translate-x-[120%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    User
+                </p>
+            </a>
+
+            <a href="list.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-list fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[117%] xl:translate-x-[127%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    List
+                </p>
+            </a>
+
+            <a href="insert.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:relative xl:w-14 xl:h-14 bg-slate-600 rounded-full icon-active">
+                <i class="fa-solid fa-plus fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[105%] xl:translate-x-[115%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    Insert
+                </p>
+            </a>
+
+            <a href="index.html" class="flex justify-center items-center w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 lg:w-[3.25rem] lg:h-[3.25rem] lg:my-3 lg:cursor-pointer lg:icon-hover lg:absolute lg:bottom-0 xl:w-14 xl:h-14 bg-slate-600 rounded-full">
+                <i class="fa-solid fa-arrow-right-from-bracket fa-xl text-green-500"></i>
+                <p class="hidden bg-slate-800 text-white text-xl absolute w-max lg:translate-x-[105%] xl:translate-x-[115%] lg:z-50 py-2 px-6 rounded">
+                    <span class="bg-slate-800 w-6 h-6 top-0 -left-1 translate-y-[40%] rotate-45 absolute border-none"></span>
+                    Logout
+                </p>
+            </a>
+        </nav>
+        <!-- navbar -->
+
+
+        <!-- main -->
+        <form enctype="multipart/form-data" class="overflow-hidden w-full p-3 mb-14 sm:mb-16 sm:p-4 md:mb-[4.5rem] md:p-5 lg:w-[93%] lg:p-6 xl:w-[94%] lg:h-screen lg:overflow-auto lg:relative">
+
+            <div class="rows-container w-full overflow-hidden flex flex-col gap-10">
+                
+                <div class="rows rounded shadow-lg bg-neutral-50 p-3 border border-slate-500">
+                    <div class="w-8 h-8 flex justify-center items-center font-semibold text-lg bg-slate-300 rounded ">1</div>
+
+                    <div class="sm:text-center mt-2">
+                        <img class="img block w-40 h-40 md:w-44 md:h-44 xl:w-48 xl:h-48 mx-auto bg-cover rounded-md ring-4 ring-slate-300">
+                        <input type="file" name="" class="input-file text-base lg:text-lg mt-5 mb-5">
+                    </div>
+                    
+                    <ul class="mt-1 flex flex-col gap-2 sm:grid sm:grid-cols-2 sm:gap-x-5 lg:grid lg:grid-cols-4 lg:mt-2 xl:gap-x-10">
+                        <li class="">
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">NIS (wajib)</label>
+                            <input required type="number" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li class="">
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">NISN (wajib)</label>
+                            <input required type="number" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li class="">
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Nama (wajib)</label>
+                            <input required type="text" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Agama (wajib)</label>
+                            <select required id="" class="border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-[.55rem] xl:p-2.5 rounded-sm shadow font-normal">
+                                <option value="1">Islam</option>
+                                <option value="2">Kristen</option>
+                                <option value="3">Budha</option>
+                                <option value="4">Hindu</option>
+                                <option value="5">Konghucu</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    <ul class="mt-3 flex flex-col gap-2 sm:grid sm:grid-cols-2 sm:gap-x-5 lg:grid lg:grid-cols-4 lg:mt-4 xl:gap-x-10">
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Gender (wajib)</label>
+                            <select required name="" id="" class="border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-[.55rem] xl:p-2.5 rounded-sm shadow font-normal">
+                                <option value="1">Laki-Laki</option>
+                                <option value="2">Perempuan</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Anak Ke</label>
+                            <input type="number" min="1" step="1" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Tempat Lahir</label>
+                            <input type="text" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Tanggal Lahir</label>
+                            <input type="date" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                    </ul>
+
+                    <ul class="mt-3 flex flex-col gap-2 sm:grid sm:grid-cols-2 sm:gap-x-5 lg:grid lg:grid-cols-4 lg:mt-4 xl:gap-x-10">
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Umur (Tahun)</label>
+                            <input type="number" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Tinggi (Cm)</label>
+                            <input type="number" id="" class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">Berat (Kg)</label>
+                            <input type="number" id=""  class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                        <li>
+                            <label for="" class="block text-base lg:text-lg font-medium tracking-wide">NoHp</label>
+                            <input type="number" id=""  class="input border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                        </li>
+                    </ul>
+
+                    <ul class="mt-3 flex flex-col gap-2 md:grid md:grid-cols-2 md:gap-x-5 lg:mt-4 xl:gap-x-10">
+                        <li>
+                            <label for="" class="block lg:text-lg font-medium tracking-wide">Alamat</label>
+                            <textarea name=""  rows="4" class="border border-gray-500 w-full lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal"></textarea>
+                        </li>
+                        <li>
+                            <label for="" class="block lg:text-lg font-medium tracking-wide">Catatan Untuk Murid</label>
+                            <textarea name="" rows="4" class="border border-gray-500 w-full lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal"></textarea>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="flex gap-5 p-3 items-end sm:grid sm:grid-cols-2 sm:gap-x-5 lg:grid lg:grid-cols-4 lg:mt-2 xl:gap-x-10">
+                    <li class="w-full">
+                        <label for="rows" class="block text-base font-medium tracking-wide">Rows <span class="text-xs font-semibold">max(3)</span></label>
+                        <input type="number" min="1" max="3" step="1" id="rows" class="input-rows border border-gray-500 w-full text-base lg:text-lg outline-none py-2.5 px-2 lg:p-1.5 xl:p-2 rounded-sm shadow font-normal">
+                    </li>
+                    <li class="w-full">
+                        <button type="button" class="py-2.5 px-2 sm:py-1.5 lg:p-1.5 xl:p-2 text-center border border-slate-400 w-full text-base sm:text-lg font-medium tracking-widest bg-green-400 text-[#22] rounded hover:rounded-full">insert</button>
+                    </li>
+                </ul>
+        </form>
+
+        <script src="{{ asset('js/dashboard/insert/index.js') }}"></script>
+
+        <!-- main -->
+    </div>
+</body>
+</html>
